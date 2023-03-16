@@ -3,11 +3,11 @@ package OOP.Part1.Vector;
 import java.util.Arrays;
 
 public class Vector {
-    //ПОЛЯ:
+   
     private int n;
     private double[] components;
 
-    //КОНСТРУКТОРЫ:
+    
     public Vector(int n) {
         if (n <= 0) {
             throw new IllegalArgumentException("Размерность n должна быть больше 0");
@@ -66,7 +66,7 @@ public class Vector {
         this.components[index] = component;
     }
 
-    //ПЕРЕОПРЕДЕЛЕНИЕ СТАНДАРТНЫХ МЕТОДОВ:
+   
     @Override
     public String toString() {
         return Arrays.toString(components);
